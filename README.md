@@ -53,7 +53,7 @@ class { 'corp104_nvm':
 
 ```puppet
 class { 'corp104_nvm':
-  http_proxy         => 'http://change.proxy.com:3128',
+  http_proxy   => 'http://change.proxy.com:3128',
   node_version => '8',
 }
 ```
