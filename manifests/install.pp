@@ -10,10 +10,16 @@ class corp104_nvm::install inherits corp104_nvm {
       unless   => ". ${corp104_nvm::nvm_dir}/nvm.sh; nvm --version",
     }
     exec { 'install-nvm':
-      provider => 'shell',
-      command  => "export ${corp104_nvm::http_proxy}; HOME=/tmp NVM_DIR=${corp104_nvm::nvm_dir} PROFILE=${corp104_nvm::profile} bash ${corp104_nvm::nvm_install_tmp}",
-      path     => '/bin:/usr/bin:/usr/local/bin:/usr/sbin',
-      unless   => ". ${corp104_nvm::nvm_dir}/nvm.sh; nvm --version",
+      provider    => 'shell',
+      environment => [
+        "https_proxy=${corp104_nvm::http_proxy}",
+        'HOME=/tmp',
+        "NVM_DIR=${corp104_nvm::nvm_dir}",
+        "PROFILE=${corp104_nvm::profile}"
+      ],
+      command     => "bash ${corp104_nvm::nvm_install_tmp}",
+      path        => '/bin:/usr/bin:/usr/local/bin:/usr/sbin',
+      unless      => ". ${corp104_nvm::nvm_dir}/nvm.sh; nvm --version",
     }
   }
   else {
