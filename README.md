@@ -44,7 +44,7 @@ class { 'corp104_nvm':
 
 ```puppet
 class { 'corp104_nvm':
-  node_version => '6.11',
+  node_version => '6.11.5',
   set_default  => true,
 }
 ```
@@ -54,7 +54,7 @@ class { 'corp104_nvm':
 ```puppet
 class { 'corp104_nvm':
   http_proxy   => 'http://change.proxy.com:3128',
-  node_version => '8',
+  node_version => '6.11.5',
 }
 ```
 
