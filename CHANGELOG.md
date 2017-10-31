@@ -1,3 +1,7 @@
+## 2017-10-31 - Release 2.0.0
+
+  - set node and npm softlink to /usr/local/bin
+
 ## 2017-09-21 - Release 1.0.2
 
   - fix proxy mode.

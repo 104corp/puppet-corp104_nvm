@@ -32,11 +32,11 @@ All parameters for the ntp module are contained within the main `::corp104_nvm` 
 include '::corp104_nvm'
 ```
 
-### Install specially node version. default '6'
+### Install specially node version. default '8.8.0'
 
 ```puppet
 class { 'corp104_nvm':
-  node_version => '6.11',
+  node_version => '6.11.5',
 }
 ```
 

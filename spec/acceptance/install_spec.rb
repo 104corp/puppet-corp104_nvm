@@ -15,7 +15,7 @@ describe 'install corp104_nvm' do
     it 'should install package' do
       pp = <<-EOS
         class { 'corp104_nvm':
-          node_version => '8'
+          node_version => '8.8.0'
         }
       EOS
 

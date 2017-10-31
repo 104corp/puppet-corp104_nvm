@@ -32,4 +32,18 @@ class corp104_nvm::install::node inherits corp104_nvm {
       require  => Exec['install-node'],
     }
   }
+
+  # set node and npm link to /usr/local/bin.
+  file {
+    default:
+      ensure => link,
+    ;
+    '/usr/local/bin/node':
+      target => "${corp104_nvm::nvm_dir}/versions/node/v${corp104_nvm::node_version}/bin/node",
+    ;
+    '/usr/local/bin/npm':
+      target => "${corp104_nvm::nvm_dir}/versions/node/v${corp104_nvm::node_version}/bin/npm",
+    ;
+  }
+
 }
