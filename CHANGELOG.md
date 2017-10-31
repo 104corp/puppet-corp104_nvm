@@ -1,4 +1,4 @@
-## 2017-10-31 - Release 2.0.0
+## 2017-10-31 - Release 2.0.0 and 2.0.1
 
   - set node and npm softlink to /usr/local/bin
 
