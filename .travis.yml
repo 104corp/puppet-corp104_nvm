@@ -35,6 +35,3 @@ matrix:
     env: PUPPET_GEM_VERSION="~> 5.0"
 notifications:
   email: false
-  slack:
-    rooms:
-      secure: iGHcITer8TEGlJCfIaljxRMops+MaF6x8alxsavxQlQBLtqAsFMksuvQkapqRx8d4rMlgQ/NAKbsavgD1fROzPk1waXxT3mtJxbArxZiRbV3j/lWrUx3gWhA/qSk6vFR/pudBs2c/jEF9GbG2d42EZL1F+QsO8RD2wl5Ma+Oo+fiwkCAoBt/I/g6PH5G8YkI2NrUD/PntsTwM94qCdFUqKzHt28suqVUlUPAwfasM4cTterfNq8jyjR1ius36uyu+7+skwVEywAOqyK1NDxgFj0g7eN/VISCx3gKmzyOVgEN1KuHO66NgogaKb4oXlIxPYvNEHP2gRKK2RMfNOUn0ycsGuJSfwbjbSfwHVmkw2sUJhaFNHxf/jBVoyZyIJwVEZsxomSsA6A7bYh7ph8wjsnvB2WZNC49UZMB8+v1Se0tH6p6DLebnCZLz84lC5sGZl6yCl5DXuKoOocvpQ5CuagYImHRZVVyV79u4Lg89y480WupYl4s0ThGz94YS3GeYYGOt+OokBlaVK+OL4we51trFK1PtSfTF1q8uRgS8cmwkGJFa/PLolG10K//FPd1Rh4k5MfuFPnAnl/1R27VYtB9GpnC+dB2mk9XhjY9zVmwxWP9Od+qS2YsF3DWtHkOgx8vvmBzpsjFFNhMUNWNbIIXs5L2s2Kp/wQXmqOKBXM=
