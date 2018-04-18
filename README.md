@@ -1,12 +1,12 @@
-# puppet module corp104_nvm
-[![Build Status](https://travis-ci.org/104corp/puppet-corp104_nvm.svg?branch=master)](https://travis-ci.org/104corp/puppet-corp104_nvm)
+# puppet module corp104_karaf_container
+[![Build Status](https://travis-ci.org/104corp/puppet-corp104_karaf_container.svg?branch=master)](https://travis-ci.org/104corp/puppet-corp104_karaf_container)
 
 
 #### Table of Contents
 
 1. [Description](#description)
-1. [Setup - The basics of getting started with corp104_nvm](#setup)
-    * [Beginning with corp104_nvm](#beginning-with-corp104_nvm)
+1. [Setup - The basics of getting started with corp104_karaf_container](#setup)
+    * [Beginning with corp104_karaf_container](#beginning-with-corp104_karaf_container)
 1. [Usage - Configuration options and additional functionality](#usage)
 1. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 1. [Limitations - OS compatibility, etc.](#limitations)
@@ -14,49 +14,24 @@
 
 ## Description
 
-The corp104_nvm module installs, configures, and manages the corp104_nvm service across a range of operating systems and distributions.
+The corp104_karaf_container module installs, configures, and manages the corp104_karaf_container service across a range of operating systems and distributions.
 
 ## Setup
 
-### Beginning with corp104_nvm
+### Beginning with corp104_karaf_container
 
-`include '::corp104_nvm'` is enough to get you up and running.
+`include '::corp104_karaf_container'` is enough to get you up and running.
 
 ## Usage
 
-All parameters for the ntp module are contained within the main `::corp104_nvm` class, so for any function of the module, set the options you want. See the common usages below for examples.
+All parameters for the ntp module are contained within the main `::corp104_karaf_container` class, so for any function of the module, set the options you want. See the common usages below for examples.
 
-### Install and enable corp104_nvm
-
-```puppet
-include '::corp104_nvm'
-```
-
-### Install specially node version. default '8.8.0'
+### Install and enable corp104_karaf_container
 
 ```puppet
-class { 'corp104_nvm':
-  node_version => '6.11.5',
-}
+include '::corp104_karaf_container'
 ```
 
-### Set default node version.
-
-```puppet
-class { 'corp104_nvm':
-  node_version => '6.11.5',
-  set_default  => true,
-}
-```
-
-### Download package to Use a Proxy
-
-```puppet
-class { 'corp104_nvm':
-  http_proxy   => 'http://change.proxy.com:3128',
-  node_version => '6.11.5',
-}
-```
 
 ## Reference
 
@@ -64,18 +39,17 @@ class { 'corp104_nvm':
 
 #### Public classes
 
-* corp104_nvm: Main class, includes all other classes.
+* corp104_karaf_container: Main class, includes all other classes.
 
 #### Private classes
 
-* corp104_nvm::install Handles the packages.
-* corp104_nvm::install::node Handles the node packages.
-* corp104_nvm::config Handles the config.
-
+* corp104_karaf_container::install Handles the packages.
+* corp104_karaf_container::config Handles the config.
+* corp104_karaf_container::service Handles the services.
 
 ## Limitations
 
-This module cannot guarantee installation of corp104_nvm versions that are not available on  platform repositories.
+This module cannot guarantee installation of corp104_karaf_container versions that are not available on  platform repositories.
 
 This module is officially [supported](https://forge.puppetlabs.com/supported) for the following Java versions and platforms:
 

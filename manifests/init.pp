@@ -1,7 +1,7 @@
-# Class: corp104_nvm
+# Class: corp104_karaf_container
 # ===========================
 #
-# Full description of class corp104_nvm here.
+# Full description of class corp104_karaf_container here.
 #
 # Parameters
 # ----------
@@ -28,7 +28,7 @@
 # --------
 #
 # @example
-#    class { 'corp104_nvm':
+#    class { 'corp104_karaf_container':
 #      servers => [ 'pool.ntp.org', 'ntp.local.company.com' ],
 #    }
 #
@@ -42,18 +42,15 @@
 #
 # Copyright 2017 Your name here, unless otherwise noted.
 #
-class corp104_nvm (
-  String $nvm_version,
-  String $nvm_dir,
-  String $profile,
-  String $nvm_install_tmp,
-  String $node_version,
-  Boolean $set_default,
-  Optional[String] $http_proxy,
+class corp104_karaf_container (
+  String $http_proxy,
+  String $version,
 ){
-  contain corp104_nvm::install
-  contain corp104_nvm::install::node
+  contain corp104_karaf_container::install
+  contain corp104_karaf_container::config
+  contain corp104_karaf_container::service
 
-  Class['::corp104_nvm::install']
-  -> Class['::corp104_nvm::install::node']
+  Class['::corp104_karaf_container::install']
+  -> Class['::corp104_karaf_container::config']
+  ~> Class['::corp104_karaf_container::service']
 }

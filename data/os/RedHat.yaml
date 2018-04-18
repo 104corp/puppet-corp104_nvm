@@ -1,1 +1,1 @@
-corp104_nvm::profile: '/etc/bashrc'
+corp104_karaf_container::profile: '/etc/bashrc'
