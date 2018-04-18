@@ -1,16 +1,16 @@
 {
-  "name": "104corp-corp104_karaf_container",
-  "description": "corp104_karaf_container Module for Debian, Ubuntu, CentOS and RHEL.",
-  "version": "0.0.1",
+  "name": "104corp-corp104_nvm",
+  "description": "corp104_nvm Module for Debian, Ubuntu, CentOS and RHEL.",
+  "version": "2.0.1",
   "author": "104corp",
   "summary": "Install, deploysm, and configures AWS agent services.",
   "license": "Apache-2.0",
-  "source": "https://github.com/104corp/corp104_karaf_container",
-  "project_page": "https://github.com/104corp/corp104_karaf_container",
-  "issues_url": "https://github.com/104corp/corp104_karaf_container/issues",
+  "source": "https://github.com/104corp/corp104_nvm",
+  "project_page": "https://github.com/104corp/corp104_nvm",
+  "issues_url": "https://github.com/104corp/corp104_nvm/issues",
     "tags": [
     "104",
-    "karaf_container",
+    "nvm",
     "puppet"
   ],
   "dependencies": [

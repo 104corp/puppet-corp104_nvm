@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'corp104_karaf_container', :type => 'class' do
+describe 'corp104_nvm', :type => 'class' do
   context 'with defaults for all parameters' do
     let(:facts) do
       { 
@@ -12,10 +12,9 @@ describe 'corp104_karaf_container', :type => 'class' do
       }
     end
     it do
-      should contain_class('corp104_karaf_container')
-      should contain_class('corp104_karaf_container::install')
-			should contain_class('corp104_karaf_container::config')
-      should contain_class('corp104_karaf_container::service')
+      should contain_class('corp104_nvm')
+      should contain_class('corp104_nvm::install')
+      should contain_class('corp104_nvm::install::node')
     end
 
     it do

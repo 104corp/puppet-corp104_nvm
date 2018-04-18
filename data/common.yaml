@@ -1,3 +1,6 @@
-corp104_karaf_container::version: '4.2.0'
-corp104_karaf_container::install_tmp: '/tmp'
-corp104_karaf_container::http_proxy: ~
+corp104_nvm::nvm_version: 'v0.33.2'
+corp104_nvm::nvm_dir: '/usr/local/nvm'
+corp104_nvm::nvm_install_tmp: '/tmp/nvm_install.sh'
+corp104_nvm::http_proxy: ~
+corp104_nvm::node_version: '8.8.0'
+corp104_nvm::set_default: true

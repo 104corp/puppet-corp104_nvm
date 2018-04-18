@@ -1,3 +1,3 @@
-class { 'corp104_karaf_container':
-  http_proxy => 'http://change.proxy.com:3128',
+class { 'corp104_nvm':
+  http_proxy         => 'http://change.proxy.com:3128',
 }
