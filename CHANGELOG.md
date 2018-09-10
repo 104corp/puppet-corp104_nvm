@@ -1,3 +1,7 @@
+## 2018-09-10 - Release 2.0.3
+
+  - support `NO_UPDATE_NOTIFIER`.
+
 ## 2018-05-31 - Release 2.0.2
 
   - fix metadata summary.
