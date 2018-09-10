@@ -49,6 +49,7 @@ class corp104_nvm (
   String $nvm_install_tmp,
   String $node_version,
   Boolean $set_default,
+  Boolean $no_update_notifier,
   Optional[String] $http_proxy,
 ){
   contain corp104_nvm::install

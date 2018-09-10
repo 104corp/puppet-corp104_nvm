@@ -4,3 +4,4 @@ corp104_nvm::nvm_install_tmp: '/tmp/nvm_install.sh'
 corp104_nvm::http_proxy: ~
 corp104_nvm::node_version: '8.8.0'
 corp104_nvm::set_default: true
+corp104_nvm::no_update_notifier: false
