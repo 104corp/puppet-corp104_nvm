@@ -46,11 +46,11 @@ class corp104_nvm::install::node inherits corp104_nvm {
     ;
   }
 
-  if $no_update_notifier {
+  if $corp104_nvm::no_update_notifier {
     augeas { 'no-update-notifier-environment':
       lens    => 'Shellvars.lns',
       incl    => '/etc/environment',
-      changes => "set NO_UPDATE_NOTIFIER 1",
+      changes => 'set NO_UPDATE_NOTIFIER 1',
     }
   }
 }
