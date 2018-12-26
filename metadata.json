@@ -1,7 +1,7 @@
 {
   "name": "104corp-corp104_nvm",
   "description": "corp104_nvm Module for Debian, Ubuntu, CentOS and RHEL.",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "author": "104corp",
   "summary": "Install, deploysm, and configures nvm.",
   "license": "Apache-2.0",

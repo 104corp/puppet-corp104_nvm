@@ -1,3 +1,7 @@
+## 2018-12-26 - Release 2.1.0
+
+  - add support no_update_notifier.
+
 ## 2018-09-10 - Release 2.0.3
 
   - support `NO_UPDATE_NOTIFIER`.
