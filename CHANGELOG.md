@@ -1,3 +1,7 @@
+## 2019-04-10 - Release 2.2.0
+
+  - Fix no https_proxy when nvm install.
+
 ## 2018-12-26 - Release 2.1.0
 
   - add support no_update_notifier.
